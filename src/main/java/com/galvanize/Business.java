@@ -21,7 +21,7 @@ public class Business implements Addressable {
     }
 
     /*
-        <X> helps to identify what datatype is entering the ArrayList
+        <X> identifies what datatype ArrayList contains
      */
     @Override
     public List<Address> getAddresses() {
