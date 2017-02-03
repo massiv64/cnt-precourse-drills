@@ -7,9 +7,9 @@ import java.util.List;
  */
 public interface Addressable {
 
-    List getAddress();
+    List<Address> getAddresses();
 
-    void addAddress(Address, addy);
+    void addAddress(Address addy);
 
 
 }

@@ -1,11 +1,35 @@
 package com.galvanize;
 
 import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by hemiola on 2/3/17.
  */
-public class Business {
+public class Business implements Addressable {
 
     private final String name;
-    private final ArrayList addresses;
+    private final ArrayList<Address> addresses;
+
+    public Business(String name) {
+        this.name = name;
+        addresses = new ArrayList<Address>();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    /*
+        <X> helps to identify what datatype is entering the ArrayList
+     */
+    @Override
+    public List<Address> getAddresses() {
+        return addresses;
+    }
+
+    @Override
+    public void addAddress(Address addy) {
+        addresses.add(addy);
+    }
 }
