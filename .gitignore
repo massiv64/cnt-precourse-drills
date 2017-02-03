@@ -1,2 +1,5 @@
 build
 .gradle
+/src/nbproject/private/
+/JavaProject2/nbproject/private/
+/nbproject/private/
